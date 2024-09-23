@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+body {
+  background: linear-gradient(180deg, #9bff9c, #f3ff68);
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  display: flex;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  height: 6.5rem;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  color: black;
+  padding: 0 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.questions {
+  margin: 0 0.5rem;
+  color: #058006;
+  font-weight: bold;
+}
+
+/* SEÇÃO DE INFORMAÇÕES */
+
+section {
+  padding: 0 10rem;
+}
+
+.information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.information > div > img {
+  margin: 5rem 0 3rem 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #058006;
+  margin-bottom: 1rem;
+}
+
+.information-text {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.information-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+/* FORMULÁRIO */
+
+form {
+  position: absolute;
+  top: 32rem;
+  background-color: white;
+  border-radius: 0.7rem;
+  box-shadow: -15px 15px 10px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  width: 29rem;
+  height: 31rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  color: #058006;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0 1rem 1rem 1rem;
+}
+
+label {
+  width: 23rem;
+  height: 3rem;
+  margin: 0.7rem;
+  background-color: #05800630;
+  border: 1px solid #666;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+label > span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+input[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+button {
+  position: absolute;
+  bottom: -1.5rem;
+  background-color: #058006;
+  color: white;
+  border-radius: 28px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  padding: 0.8rem 4rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #51b251;
+  color: white;
+  transform: translateY(-7px);
+  box-shadow: 0 15px 20px #05301081;
+  transition-duration: 0.5s;
+}
+
+/* SEÇÃO DE QUALIDADE */
+
+.quality-services {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.quality-services > div > img {
+  margin-top: 10rem;
+}
+
+.quality-block {
+  padding-top: 5rem;
+}
