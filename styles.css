@@ -7,6 +7,10 @@
   font-family: Inter;
 }
 
+html{
+  font-size: 16px;
+}
+
 body {
   background: linear-gradient(180deg, #9bff9c, #f3ff68);
 }
@@ -80,7 +84,9 @@ h1 {
 }
 
 .information-text-container {
+  margin-top: 11rem;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 10rem;
@@ -89,7 +95,7 @@ h1 {
 /* FORMULÁRIO */
 
 form {
-  position: absolute;
+  /*position: absolute;*/
   top: 32rem;
   background-color: white;
   border-radius: 0.7rem;
@@ -115,7 +121,7 @@ label {
   height: 3rem;
   margin: 0.7rem;
   background-color: #05800630;
-  border: 1px solid #666;
+  border: none;
   padding: 0.5rem 1rem;
   border-radius: 10px;
   cursor: pointer;
@@ -131,13 +137,23 @@ label > span {
 }
 
 input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 1.5rem;
   height: 1.5rem;
   cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+  outline: none;
+}
+
+input[type="checkbox"]:checked{
+  background-color: #05800580;
 }
 
 button {
-  position: absolute;
+  width: 12rem;
   bottom: -1.5rem;
   background-color: #058006;
   color: white;
@@ -145,8 +161,9 @@ button {
   font-size: 1.5rem;
   font-weight: bold;
   border: none;
-  padding: 0.8rem 4rem;
+  padding: 0.8rem;
   cursor: pointer;
+  text-align: center;
 }
 
 button:hover {
