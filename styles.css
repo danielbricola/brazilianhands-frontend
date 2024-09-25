@@ -78,18 +78,18 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.information-text {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
 .information-text-container {
-  margin-top: 11rem;
+  padding: 11rem;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content:flex-start;
   margin-bottom: 10rem;
+}
+
+.information-text {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
 }
 
 /* FORMULÁRIO */
