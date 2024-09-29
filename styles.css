@@ -223,6 +223,63 @@ h4 {
 .about-block > h3 {
   padding-bottom: 2rem;
 }
+.feedback{
+  background-color: rgb(247, 252, 255);
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  margin-top: 2rem;
+}
+.feedback > h3{
+  text-align: center;
+}
+.feedback > p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feedback_card{
+  width: 60rem;
+  height: 27rem;
+  padding: 2rem;
+  margin: 20px;
+  background-color:#e9fde9 ;
+  transition: transform 0.3s; 
+  transform: scale(1); 
+  border-radius: 20px;
+}
+.feedback_card:hover{
+  transform: scale(1.1);
+}
+.img_invertida{
+  transform: scale(-1);
+  float:right;
+
+}
+.texto_feedback{
+  margin: 0;
+  
+}
+.autor{
+  margin-top: 2rem;
+  text-align: end;
+  font-weight: bold;
+}
+
+.quality-block {
+  padding-top: 5rem;
+}
+#title_feedback{
+  text-align: center;
+  color: #058006;
+}
+#subtitle_feedback{
+  text-align: center;
+}
 
 /* RODAPÉ */
 
