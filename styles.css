@@ -8,15 +8,7 @@
 }
 
 body {
-  background: linear-gradient(180deg, #9bff9c, #f3ff68);
-}
-
-.overlay {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background-image: url(assets/bg-overlay.svg);
+  background: linear-gradient(90deg, #9bff9c, #f3ff68);
 }
 
 header {
@@ -25,7 +17,7 @@ header {
   width: 100vw;
   display: flex;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
-  height: 6.5rem;
+  height: 5.9rem;
   background-color: white;
 }
 
@@ -35,6 +27,7 @@ nav {
   align-items: center;
   width: 80vw;
   margin: auto;
+  padding-top: 1rem;
 }
 
 ul {
@@ -45,6 +38,11 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+.logo {
+  padding-bottom: 1rem;
 }
 
 .nav-link {
@@ -54,10 +52,15 @@ a {
   font-size: 1.1rem;
 }
 
-.nav-link.active {
-  padding: 2.2rem;
-  border-bottom: 7px solid #058006;
-  border-radius: 5px;
+.bottom-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 7px; /* adjust the height to your liking */
+  background-color: #058006; /* adjust the background color to your liking */
+  display: none;
+  border-radius: 10px;
 }
 
 .questions {
@@ -69,7 +72,9 @@ a {
 /* SEÇÃO DE INFORMAÇÕES */
 
 section {
-  padding: 0 10rem;
+  margin: 0 5rem;
+  padding: 0 5rem;
+  border-radius: 2rem;
 }
 
 .information {
@@ -144,12 +149,6 @@ label > span {
   font-size: 1.2rem;
 }
 
-input[type="checkbox"] {
-  width: 1.5rem;
-  height: 1.5rem;
-  cursor: pointer;
-}
-
 button {
   position: absolute;
   bottom: -1.5rem;
@@ -174,9 +173,12 @@ button:hover {
 /* SEÇÃO DE QUALIDADE */
 
 .quality-services {
-  background-color: white;
+  background-color: rgb(247, 252, 255);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .quality-services > div > img {
@@ -184,5 +186,73 @@ button:hover {
 }
 
 .quality-block {
+  max-width: 24rem;
   padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+h3 {
+  font-weight: bolder;
+  font-size: 2.5rem;
+  color: #058006;
+}
+
+h4 {
+  color: #058006;
+  font-size: 1.5rem;
+}
+
+/* SEÇÃO SOBRE */
+
+.about {
+  background-color: rgb(247, 252, 255);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.about-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-block > h3 {
+  padding-bottom: 2rem;
+}
+
+/* RODAPÉ */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+footer > p {
+  color: #058006;
+  font-weight: bold;
+}
+
+.footer-services {
+  padding-top: 5rem;
+}
+
+.footer-services > p {
+  font-weight: bold;
+}
+
+.footer-contacts {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.footer-contacts > a > p {
+  font-weight: bold;
 }

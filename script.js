@@ -1,13 +1,19 @@
-const navLinks = document.querySelectorAll('nav ul li a');
+const links = document.querySelectorAll('.nav-link');
+const bottomBar = document.querySelector('.bottom-bar');
 
-// Set the first link as active by default
-navLinks[0].classList.add('active');
+// Add this code to make the bottom bar active on the first link by default
+const firstLink = links[0];
+const firstLinkRect = firstLink.getBoundingClientRect();
+bottomBar.style.left = `${firstLinkRect.left}px`;
+bottomBar.style.width = `${firstLinkRect.width}px`;
+bottomBar.style.display = 'block';
 
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.forEach(otherLink => {
-      otherLink.classList.remove('active');
-    });
-    link.classList.add('active');
+links.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const linkRect = link.getBoundingClientRect();
+    bottomBar.style.left = `${linkRect.left}px`;
+    bottomBar.style.width = `${linkRect.width}px`;
+    bottomBar.style.display = 'block';
   });
 });

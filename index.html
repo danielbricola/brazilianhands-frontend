@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brazilian Hands</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -20,39 +22,35 @@
                 <li><img src="assets/whatsapp-logo.svg" alt=""></li>
                 <li><a class="questions" href="#">Questions ?</a></li>
             </ul>
+            <span class="bottom-bar"></span>
         </nav>
     </header>
 
     <main>
-        <div class="overlay"></div>
         <!-- SEÇÃO DE INFORMAÇÕES -->
         <section class="information">
             <div class="information-text-container">
                 <h1>Reliable, High-Quality Services for You</h1>
-                <p class="information-text">Talented Brazilians Making Your Home Beautiful and <br> Life Easier with Various
+                <p class="information-text">Talented Brazilians Making Your Home Beautiful and <br> Life Easier with
+                    Various
                     Services</p>
                 <form class="form-container" action="">
                     <h2>Choose your services</h2>
-                    <label>
-                        <span>Service 1</span>
-                        <input type="checkbox" name="option1" value="option1">
-                    </label>
-                    <label>
-                        <span>Service 2</span>
-                        <input type="checkbox" name="option1" value="option1">
-                    </label>
-                    <label>
-                        <span>Service 3</span>
-                        <input type="checkbox" name="option1" value="option1">
-                    </label>
-                    <label>
-                        <span>Service 4</span>
-                        <input type="checkbox" name="option1" value="option1">
-                    </label>
-                    <label>
-                        <span>Service 5</span>
-                        <input type="checkbox" name="option1" value="option1">
-                    </label>
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck1">Service 1</label>
+
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck2">Service 2</label>
+
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck3">Service 3</label>
+
+                    <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck4">Service 4</label>
+
+                    <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck5">Service 5</label>
+
                     <button type="submit">Submit</button>
                 </form>
             </div>
@@ -63,15 +61,70 @@
 
         <section class="quality-services">
             <div>
-                <img class="img2" src="assets/img2.svg" alt="">
+                <img src="assets/img2.svg" alt="">
             </div>
             <div class="quality-block">
-                <h3>Quality Services Co-operative</h3>
-                <p>Talented Brazilians offering reliable and high-quality services to make your life easier.</p>
+                <div>
+                    <h3>Quality Services Co-operative</h3>
+                    <p>Talented Brazilians offering reliable and high-quality services to make your life easier.</p>
+                </div>
+                <div>
+                    <h4>Professional Residential Cleaning Service</h4>
+                    <p>Our cleaning experts leave your home sparkling with weekly or deep cleaning services.</p>
+                </div>
+                <div>
+                    <h4>Impeccable Garden Care Service</h4>
+                    <p>Our landscapers take care of plants, trees, and keep your garden green and lush.</p>
+                </div>
+                <div>
+                    <h4>Transform Your Space with Painting</h4>
+                    <p>Skilled painters creating cosy environments with a new colour for your space.</p>
+                </div>
             </div>
         </section>
 
+        <section class="about">
+            <div class="about-block">
+                <h3>About us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere sem sit amet ligula
+                    tristique vestibulum arcu. Aliquam quis mattis diam. Phasellus Maecenas pellentesque diam eu
+                    efficitur posuere.
+                    <br>
+                    <br>
+                    Cras sed dui volutpat, commodo ante et, eleifend massa. Vivamus a elit placerat libero interdum
+                    pellentesque vitae id nisl. Nullam ultricies finibus ullamcorper.
+                </p>
+            </div>
+            <div>
+                <img src="assets/img3.svg" alt="">
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="footer-services">
+            <h3>Services</h3>
+            <p>Get access to a variety of reliable services here.</p>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <div class="footer-contacts">
+                <a href="#">
+                    <img src="assets/whatsapp-logo.svg" alt="">
+                    <p>Whatsapp</p>
+                </a href="#">
+                <a href="#">
+                    <img src="assets/facebook-logo.svg" alt="">
+                    <p>Facebook</p>
+                </a href="#">
+                <a href="#">
+                    <img src="assets/gmail-logo.svg" alt="">
+                    <p>E-mail</p>
+                </a href="#">
+            </div>
+        </div>
+        <p>© 2024. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
