@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazilian Hands</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1c5df9f876.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.1.0/dist/css/multi-select-tag.css">
+</head>
+
+<body>
+    <header>
+        <a href="#"><img class="logo" src="assets/brazilianhands-logo.svg" alt=""></a>
+        <input type="checkbox" name="" class="menu-btn">
+        <div class="nav">
+            <ol>
+                <li><a href="#">I want to hire</a></li>
+                <li><a href="#">I want to work</a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i>
+                        Contact
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <div class="hero-block">
+                    <p class="text1">
+                        <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i>
+                        <br>
+                        Exceptional Services for Your Home
+                    </p>
+                    <h1>Reliable, High-Quality Services for You</h1>
+                    <p class="hero-text">Talented Brazilians Making Your Home Beautiful and
+                        Life Easier with Various Services.</p>
+                </div>
+                <div class="form-container">
+                    <div class="box">
+                        <form class="client-form" novalidate id="clientForm" action="">
+                            <fieldset>
+                                <legend><b>Hire now</b></legend>
+                                <br>
+                                <div class="inputBox">
+                                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                                    <label class="inputLabel" for="nome">Full name *</label>
+                                </div>
+                                <br><br>
+                                <div class="inputBox">
+                                    <input type="text" name="email" id="email" class="inputUser" required>
+                                    <label class="inputLabel" for="email">Email *</label>
+                                </div>
+                                <br><br>
+                                <div class="inputBox">
+                                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                                    <label class="inputLabel" for="telefone">Phone *</label>
+                                </div>
+                                <br>
+                                <p>City: *</p>
+                                <input type="radio" id="dublin" name="city" value="dublin">
+                                <label for="dublin">Dublin</label><br>
+                                <input type="radio" id="cork" name="city" value="cork">
+                                <label for="cork">Cork</label><br>
+                                <input type="radio" id="limerick" name="city" value="limerick">
+                                <label for="limerick">Limerick</label>
+                                <br><br>
+                                <div class="inputBox">
+                                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                                    <label class="inputLabel" for="endereco">Address *</label>
+                                </div>
+                                <br>
+                                <div class="select">
+                                    <label for="services">Select the service(s) *</label>
+                                    <select name="services" id="services" multiple required>
+                                        <option value="service1">Service 1</option>
+                                        <option value="service2">Service 2</option>
+                                        <option value="service3">Service 3</option>
+                                        <option value="service4">Service 4</option>
+                                        <option value="service5">Service 5</option>
+                                    </select>
+                                </div>
+                                <div class="error" id="error-message">
+                                    Please, fill in the required fields (*)
+                                </div>
+                                <br><br><br>
+                                <div class="inputBox">
+                                    <input type="text" name="mensagem" id="mensagem" class="inputMessage">
+                                    <label class="inputLabel" for="mensagem">Message (optional)</label>
+                                </div>
+                                <br><br>
+                                <input type="submit" name="submit" id="submit" value="Place order">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quality">
+            <div class="container">
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.1.0/dist/js/multi-select-tag.js"></script>
+    <script>
+        new MultiSelectTag('services', {
+            rounded: true,    // default true
+            shadow: true,      // default false
+            placeholder: 'Search',  // default Search...
+            tagColor: {
+                textColor: '#327b2c',
+                borderColor: '#92e681',
+                bgColor: '#eaffe6',
+            },
+            onChange: function (values) {
+                console.log(values)
+            }
+        })
+    </script>
+</body>
+
+</html>
