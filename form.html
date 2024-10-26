@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/1c5df9f876.js" crossorigin="anonymous"></script>
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.1.0/dist/css/multi-select-tag.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
 </head>
 
 <body>
@@ -29,9 +30,10 @@
 
     <main>
         <section id="hero">
-            <div class="form-container">
+            <div class="form-container" data-aos="fade-up">
                 <div class="box">
-                    <form class="client-form" novalidate id="clientForm" action="https://formspree.io/f/xpwzqqrr" method="post">
+                    <form class="client-form" novalidate id="clientForm" action="https://formspree.io/f/xpwzqqrr"
+                        method="post">
                         <fieldset>
                             <legend><b>Trabalhe conosco</b></legend>
                             <br>
@@ -106,6 +108,10 @@
                     console.log(values)
                 }
             })
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+        <script>
+            AOS.init(); // Inicializa o AOS
         </script>
 </body>
 
