@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/1c5df9f876.js" crossorigin="anonymous"></script>
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.1.0/dist/css/multi-select-tag.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
 </head>
 
 <body>
@@ -19,7 +20,9 @@
             <ol>
                 <li><a href="/index.html">I want to hire</a></li>
                 <li><a href="/form.html">I want to work</a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=5512345678910&text=Ol%C3%A1,%20gostaria%20de%20entender%20melhor%20sobre%20a%20presta%C3%A7%C3%A3o%20de%20servi%C3%A7os%20"><i class="fa-brands fa-whatsapp"></i>
+                <li><a
+                        href="https://api.whatsapp.com/send?phone=5512345678910&text=Ol%C3%A1,%20gostaria%20de%20entender%20melhor%20sobre%20a%20presta%C3%A7%C3%A3o%20de%20servi%C3%A7os%20"><i
+                            class="fa-brands fa-whatsapp"></i>
                         Contact
                     </a>
                 </li>
@@ -30,7 +33,7 @@
     <main>
         <section id="hero">
             <div class="container">
-                <div class="hero-block">
+                <div class="hero-block" data-aos="fade-right">
                     <p class="text1">
                         <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i>
                         <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i>
@@ -44,9 +47,10 @@
                     <p class="hero-text">Talented Brazilians Making Your Home Beautiful and
                         Life Easier with Various Services.</p>
                 </div>
-                <div class="form-container">
+                <div class="form-container" data-aos="fade-left">
                     <div class="box">
-                        <form class="client-form" novalidate id="clientForm" action="https://formspree.io/f/mkgnogdq" method="post">
+                        <form class="client-form" novalidate id="clientForm" action="https://formspree.io/f/mkgnogdq"
+                            method="post">
                             <fieldset>
                                 <legend><b>Hire now</b></legend>
                                 <br>
@@ -105,7 +109,7 @@
             </div>
         </section>
 
-        <section id="quality">
+        <section id="quality" data-aos="fade-right">
             <div class="container">
                 <div class="img-block">
                     <img class="section-img" src="assets/img-section1.png" alt="">
@@ -136,7 +140,7 @@
             </div>
         </section>
 
-        <section id="about">
+        <section id="about" data-aos="fade-left">
             <div class="container">
                 <div class="about-block">
                     <h2>About us</h2>
@@ -156,11 +160,11 @@
             </div>
         </section>
 
-        <section id="testimonials">
+        <section id="testimonials" data-aos="fade-up">
             <h2 class="testimonials-title">Happy Customers</h2>
             <br>
             <div class="cards-container">
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <p><span>Michael Johnson.</span><br>
                         <i class="fa-solid fa-star" style="color: rgb(255, 200, 0);"></i>
                         <i class="fa-solid fa-star" style="color: rgb(255, 200, 0);"></i>
@@ -173,7 +177,7 @@
                         space<br> into a beautiful oasis. <i class="fa-solid fa-quote-right"></i>
                     </p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <p><span>Samantha Green.</span><br>
                         <i class="fa-solid fa-star" style="color: rgb(255, 200, 0);"></i>
                         <i class="fa-solid fa-star" style="color: rgb(255, 200, 0);"></i>
@@ -182,11 +186,12 @@
                         <i class="fa-solid fa-star" style="color: rgb(255, 200, 0);"></i>
                     </p>
                     <p><i class="fa-solid fa-quote-left"></i> The Brazilian Hands Co-operative exceeded my expectations
-                        with their exceptional cleaning services. I highly recommend them to anyone looking for reliable<br>
+                        with their exceptional cleaning services. I highly recommend them to anyone looking for
+                        reliable<br>
                         and high-quality service. <i class="fa-solid fa-quote-right"></i>
                     </p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <p><span>Michelle Kelly.</span><br>
                         <i class="fa-solid fa-star" style="color: rgb(255, 200, 0);"></i>
                         <i class="fa-solid fa-star" style="color: rgb(255, 200, 0);"></i>
@@ -206,7 +211,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer data-aos="fade-up">
         <div class="footer-container">
             <a href="#"><img src="assets/brazilianhands-logo.svg" alt=""></a>
             <div class="footer-nav">
@@ -240,6 +245,10 @@
                 console.log(values)
             }
         })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init(); // Inicializa o AOS
     </script>
 </body>
 
