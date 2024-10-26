@@ -13,6 +13,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   background-image: linear-gradient(to right, #9bff9c, #f3ff68);
   /* background-image: linear-gradient(to right, #2c6438, #205328, #0f2711); */
 }
