@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhe conosco</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1c5df9f876.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.1.0/dist/css/multi-select-tag.css">
+</head>
+
+<body>
+    <header>
+        <a href="#"><img class="logo" src="assets/brazilianhands-logo.svg" alt=""></a>
+        <input type="checkbox" name="" class="menu-btn">
+        <div class="nav">
+            <ol>
+                <li><a href="/index.html">I want to hire</a></li>
+                <li><a href="/form.html">I want to work</a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i>
+                        Contact
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="form-container">
+                <div class="box">
+                    <form class="client-form" novalidate id="clientForm" action="https://api.sheetmonkey.io/form/jrTJoWbHv9pF8hmPBsqFjz" method="post">
+                        <fieldset>
+                            <legend><b>Trabalhe conosco</b></legend>
+                            <br>
+                            <div class="inputBox">
+                                <input type="text" name="Nome completo" id="nome" class="inputUser" required>
+                                <label class="inputLabel" for="nome">Nome completo *</label>
+                            </div>
+                            <br><br>
+                            <div class="inputBox">
+                                <input type="text" name="Email" id="email" class="inputUser" required>
+                                <label class="inputLabel" for="email">Email *</label>
+                            </div>
+                            <br><br>
+                            <div class="inputBox">
+                                <input type="tel" name="Telefone" id="telefone" class="inputUser" required>
+                                <label class="inputLabel" for="telefone">Celular *</label>
+                            </div>
+                            <br>
+                            <p>Cidade: *</p>
+                            <input type="radio" id="dublin" name="Cidade" value="Dublin">
+                            <label for="dublin">Dublin</label><br>
+                            <input type="radio" id="cork" name="Cidade" value="Cork">
+                            <label for="cork">Cork</label><br>
+                            <input type="radio" id="limerick" name="Cidade" value="Limerick">
+                            <label for="limerick">Limerick</label>
+                            <br><br>
+                            <div class="inputBox">
+                                <input type="text" name="Endereço" id="endereco" class="inputUser" required>
+                                <label class="inputLabel" for="endereco">Endereço *</label>
+                            </div>
+                            <br>
+                            <div class="select">
+                                <label for="services">Selecione o(s) serviço(s) que deseja prestar *</label>
+                                <select name="Serviços" id="services" multiple required>
+                                    <option value="service1">Serviço 1</option>
+                                    <option value="service2">Serviço 2</option>
+                                    <option value="service3">Serviço 3</option>
+                                    <option value="service4">Serviço 4</option>
+                                    <option value="service5">Serviço 5</option>
+                                </select>
+                            </div>
+                            <div class="error" id="error-message">
+                                Por favor, preencha todos os campos (*)
+                            </div>
+                            <br><br><br>
+                            <div class="inputBox">
+                                <input type="text" name="Mensagem" id="mensagem" class="inputMessage">
+                                <label class="inputLabel" for="mensagem">Mensagem (opcional)</label>
+                            </div>
+                            <br><br>
+                            <input type="submit" name="Submit" id="submit" value="Enviar inscrição">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <script src="scripts.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.1.0/dist/js/multi-select-tag.js"></script>
+        <script>
+            new MultiSelectTag('services', {
+                rounded: true,    // default true
+                shadow: true,      // default false
+                placeholder: 'Search',  // default Search...
+                tagColor: {
+                    textColor: '#327b2c',
+                    borderColor: '#92e681',
+                    bgColor: '#eaffe6',
+                },
+                onChange: function (values) {
+                    console.log(values)
+                }
+            })
+        </script>
+</body>
+
+</html>
